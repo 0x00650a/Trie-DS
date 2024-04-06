@@ -1,6 +1,10 @@
 #ifndef WORDS_H
 #define WORDS_H
 
+#ifndef ARRAY_LEN
+#define ARRAY_LEN(arr) (sizeof(arr) / sizeof(arr[0]))
+#endif
+
 const char *words[] = {
     "apple",
     "banana",
@@ -76,7 +80,28 @@ const char *words[] = {
     "brusselsprout"
 };
 
-const size_t words_count = sizeof(words) / sizeof(words[0]);
+const size_t words_count = ARRAY_LEN(words);
+
+
+const char *words2[] = {
+    "cat",
+    "dog",
+    "fish",
+    "bird",
+    "lion",
+    "tiger",
+    "bear",
+    "wolf",
+    "frog",
+    "snake",
+    "mouse",
+    "horse",
+    "sheep",
+    "goat",
+    "duck"
+};
+
+const size_t words2_count = ARRAY_LEN(words2);
 
 #endif /* WORDS_H */
 
