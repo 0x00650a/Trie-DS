@@ -13,6 +13,7 @@ struct node {
 
 node * allocate(void);
 void insert_string(node *, const char*);
-void dump_grph(node *);
+void dump_grph(FILE *,node *);
+void svg_builder(char **);
 
 #endif
