@@ -16,5 +16,5 @@ $ ./build.sh
 Edit ```words.h``` to create a customized word list.
 
 ## References
-- <a target=_blank href="https://en.wikipedia.org/wiki/Trie">Wikipedia</a>
+- <a target="_blank" href="https://en.wikipedia.org/wiki/Trie">Wikipedia</a>
 
